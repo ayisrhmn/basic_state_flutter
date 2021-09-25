@@ -162,26 +162,27 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-          backgroundColor: const Color(0xff04112f),
-          body: SafeArea(
-            child: SingleChildScrollView(
-              child: Column(
-                children: [
-                  header(),
-                  const SizedBox(
-                    height: 50,
-                  ),
-                  option(0, 'Monthly', 'Good for starting up', '\$20'),
-                  option(1, 'Quarterly', 'Focusing on building', '\$55'),
-                  option(2, 'Yearly', 'Steady company', '\$220'),
-                  const SizedBox(
-                    height: 50,
-                  ),
-                  selectedIndex == -1 ? const SizedBox() : checkoutBtn(),
-                ],
-              ),
+        backgroundColor: const Color(0xff04112f),
+        body: SafeArea(
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                header(),
+                const SizedBox(
+                  height: 50,
+                ),
+                option(0, 'Monthly', 'Good for starting up', '\$20'),
+                option(1, 'Quarterly', 'Focusing on building', '\$55'),
+                option(2, 'Yearly', 'Steady company', '\$220'),
+                const SizedBox(
+                  height: 50,
+                ),
+                selectedIndex == -1 ? const SizedBox() : checkoutBtn(),
+              ],
             ),
-          )),
+          ),
+        ),
+      ),
     );
   }
 }
